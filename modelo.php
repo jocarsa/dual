@@ -412,7 +412,7 @@
 
     
         <?php
-        $db = new PDO("sqlite:../dual.sqlite");
+        $db = new PDO("sqlite:../databases/dual.sqlite");
         $query = "SELECT * FROM modulos WHERE ciclo = 'Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Multiplataforma' AND curso = '1'";
     $result = $db->query($query);
     while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
